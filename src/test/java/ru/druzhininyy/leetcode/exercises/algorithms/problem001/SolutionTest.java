@@ -1,4 +1,4 @@
-package ru.druzhininyy.leetcode.exercises.test.problem001;
+package ru.druzhininyy.leetcode.exercises.algorithms.problem001;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.Setter;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import ru.druzhininyy.leetcode.exercises.algorithms.problem001.Solution;
 
 import java.io.IOException;
 import java.util.Arrays;
