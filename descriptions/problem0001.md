@@ -25,4 +25,4 @@ You can return the answer in any order.
 * `-10^9 <= target <= 10^9`
 * **Only one valid answer exists.**
 
-### **[Solution](../src/main/java/ru/druzhininyy/leetcode/exercises/algorithms/problem001/Solution.java)**
+### **[Solution](../src/main/java/ru/druzhininyy/leetcode/exercises/algorithms/problem0001/Solution.java)**

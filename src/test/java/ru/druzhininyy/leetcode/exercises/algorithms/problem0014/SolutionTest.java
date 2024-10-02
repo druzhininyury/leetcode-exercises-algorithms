@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Getter;
 import lombok.Setter;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -12,6 +13,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@DisplayName("Test: 14. Longest Common Prefix.")
 public class SolutionTest {
 
     @Getter
@@ -30,7 +32,7 @@ public class SolutionTest {
         try {
             testCases = objectMapper.readValue(
                     SolutionTest.class.getClassLoader().getResourceAsStream(SOURCE_FILE),
-                    new TypeReference<List<TestCase>>() {});
+                    new TypeReference<>() {});
         } catch (IOException e) {
             System.out.println("Error while loading data from " + SOURCE_FILE);
             System.out.println(e.getMessage());

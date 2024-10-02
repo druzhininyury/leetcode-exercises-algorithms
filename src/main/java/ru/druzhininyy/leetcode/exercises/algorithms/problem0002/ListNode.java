@@ -1,4 +1,4 @@
-package ru.druzhininyy.leetcode.exercises.algorithms.problem002;
+package ru.druzhininyy.leetcode.exercises.algorithms.problem0002;
 
 
 public class ListNode {

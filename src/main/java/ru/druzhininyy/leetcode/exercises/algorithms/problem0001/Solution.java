@@ -1,4 +1,4 @@
-package ru.druzhininyy.leetcode.exercises.algorithms.problem001;
+package ru.druzhininyy.leetcode.exercises.algorithms.problem0001;
 
 import java.util.HashMap;
 import java.util.Map;

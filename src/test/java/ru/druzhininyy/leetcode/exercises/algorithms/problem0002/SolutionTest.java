@@ -1,10 +1,11 @@
-package ru.druzhininyy.leetcode.exercises.algorithms.problem002;
+package ru.druzhininyy.leetcode.exercises.algorithms.problem0002;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Getter;
 import lombok.Setter;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -13,6 +14,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
+@DisplayName("Test: 2. Add Two Numbers.")
 public class SolutionTest {
 
     @Getter
@@ -51,7 +53,7 @@ public class SolutionTest {
         }
     }
 
-    private static final String SOURCE_FILE = "problem002.json";
+    private static final String SOURCE_FILE = "problem0002.json";
     public static List<TestCase> testCases;
 
     @BeforeAll
@@ -60,7 +62,7 @@ public class SolutionTest {
         try {
             testCases = objectMapper.readValue(
                     SolutionTest.class.getClassLoader().getResourceAsStream(SOURCE_FILE),
-                    new TypeReference<List<TestCase>>() {});
+                    new TypeReference<>() {});
         } catch (IOException e) {
             System.out.println("Error while loading data from " + SOURCE_FILE);
             System.out.println(e.getMessage());
