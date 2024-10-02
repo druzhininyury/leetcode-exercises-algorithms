@@ -1,0 +1,14 @@
+[
+  {
+    "roman": "III",
+    "expected": 3
+  },
+  {
+    "roman": "LVIII",
+    "expected": 58
+  },
+  {
+    "roman": "MCMXCIV",
+    "expected": 1994
+  }
+]

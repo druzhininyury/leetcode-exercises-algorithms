@@ -1,0 +1,14 @@
+[
+  {
+    "x": 121,
+    "expected": true
+  },
+  {
+    "x": -121,
+    "expected": false
+  },
+  {
+    "x": 10,
+    "expected": false
+  }
+]
