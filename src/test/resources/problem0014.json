@@ -1,0 +1,14 @@
+[
+  {
+    "strings": ["flower","flow","flight"],
+    "expected": "fl"
+  },
+  {
+    "strings": ["dog","racecar","car"],
+    "expected": ""
+  },
+  {
+    "strings": ["ab","a"],
+    "expected": "a"
+  }
+]
