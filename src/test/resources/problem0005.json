@@ -1,0 +1,30 @@
+[
+  {
+    "str": "babad",
+    "expected": ["bab", "aba"]
+  },
+  {
+    "str": "cbbd",
+    "expected": ["bb"]
+  },
+  {
+    "str": "abcba",
+    "expected": ["abcba"]
+  },
+  {
+    "str": "xabcbabcbabcby",
+    "expected": ["bcbabcbabcb"]
+  },
+  {
+    "str": "eabcb",
+    "expected": ["bcb"]
+  },
+  {
+    "str": "a",
+    "expected": ["a"]
+  },
+  {
+    "str": "",
+    "expected": [""]
+  }
+]
