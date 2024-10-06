@@ -38,7 +38,7 @@ P     I
 * `str` consists of English letters (lower-case and upper-case), `','` and `'.'`.
 * `1 <= numRows <= 1000`
 
-### **[Solution](../src/main/java/ru/druzhininyy/leetcode/exercises/algorithms/problem0005/Solution.java)**
+### **[Solution](../src/main/java/ru/druzhininyy/leetcode/exercises/algorithms/problem0006/Solution.java)**
 
 **Complexity:** `n` - str length
 
