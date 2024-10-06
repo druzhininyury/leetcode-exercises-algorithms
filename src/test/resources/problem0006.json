@@ -1,0 +1,22 @@
+[
+  {
+    "str": "PAYPALISHIRING",
+    "numRows": 3,
+    "expected": "PAHNAPLSIIGYIR"
+  },
+  {
+    "str": "PAYPALISHIRING",
+    "numRows": 4,
+    "expected": "PINALSIGYAHRPI"
+  },
+  {
+    "str": "A",
+    "numRows": 1,
+    "expected": "A"
+  },
+  {
+    "str": "ABC",
+    "numRows": 3,
+    "expected": "ABC"
+  }
+]
