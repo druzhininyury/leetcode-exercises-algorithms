@@ -1,0 +1,14 @@
+[
+  {
+    "num": 3749,
+    "expected": "MMMDCCXLIX"
+  },
+  {
+    "num": 58,
+    "expected": "LVIII"
+  },
+  {
+    "num": 1994,
+    "expected": "MCMXCIV"
+  }
+]

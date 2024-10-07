@@ -33,7 +33,7 @@ public class Solution {
             if (result > PRE_MAX_INTEGER && sign > 0 || result == PRE_MAX_INTEGER && sign > 0 && nextDigit >= 7) {
                 return Integer.MAX_VALUE;
             }
-            if (result > PRE_MAX_INTEGER && sign < 0 || result == PRE_MAX_INTEGER && sign < 0 && nextDigit >= 8) {
+            if (result > PRE_MAX_INTEGER || result == PRE_MAX_INTEGER && sign < 0 && nextDigit >= 8) {
                 return Integer.MIN_VALUE;
             }
             result = result * 10 + nextDigit;
