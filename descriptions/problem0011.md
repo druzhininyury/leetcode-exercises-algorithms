@@ -23,9 +23,17 @@ _Return the maximum amount of water a container can store._
 
 ### **[Solution](../src/main/java/ru/druzhininyy/leetcode/exercises/algorithms/problem0011/Solution.java)**
 
-**Complexity:**
+**Complexity:** `n` - heights length
 
-* Time complexity: `O(?)`.
-* Additional memory complexity: `O(?)`.
-* Input memory complexity: `O(?)`.
-* Output memory complexity: `O(?)`.
+* Time complexity: `O(n)`.
+* Additional memory complexity: `O(1)`.
+* Input memory complexity: `O(n)`.
+* Output memory complexity: `O(1)`.
+
+**Notes:**
+
+Let `leftIdx` and `rightIdx` points some elements in `heights`, and `leftIdx < rightIdx`. Let `maxArea` store some integer.
+
+**Invariant:** `maxArea` stores maximum area between any positions `i` and `j` where `i <= leftIdx` and `j >= rightIdx`.
+
+**Step:** move the pointer (`leftIdx` or `rightIdx`) with lower height toward another pointer.

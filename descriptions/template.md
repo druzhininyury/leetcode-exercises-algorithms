@@ -6,7 +6,7 @@ description
 > Input:  
 > Output:  
 > Explanation:
-> 
+
 ### **Example 2:**
 > Input:  
 > Output:  
