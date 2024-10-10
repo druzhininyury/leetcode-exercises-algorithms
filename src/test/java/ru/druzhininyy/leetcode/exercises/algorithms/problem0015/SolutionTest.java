@@ -76,8 +76,8 @@ public class SolutionTest {
             System.out.println(testCase);
             var actual = Solution.threeSum(testCase.getNums());
 
-            Collections.sort(testCase.getExpected(), lexigraphicComparator);
-            Collections.sort(actual, lexigraphicComparator);
+            testCase.getExpected().sort(lexigraphicComparator);
+            actual.sort(lexigraphicComparator);
             assertEquals(testCase.expected, actual, "actual=" + actual);
         }
     }
