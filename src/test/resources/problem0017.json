@@ -1,0 +1,19 @@
+[
+  {
+    "digits": "23",
+    "expected": ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
+  },
+  {
+    "digits": "",
+    "expected": []
+  },
+  {
+    "digits": "2",
+    "expected": ["a", "b", "c"]
+  },
+  {
+    "digits": "3",
+    "expected": ["d","e","f"]
+  }
+]
+

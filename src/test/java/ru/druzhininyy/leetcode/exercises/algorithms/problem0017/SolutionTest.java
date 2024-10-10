@@ -1,4 +1,4 @@
-package ru.druzhininyy.leetcode.exercises.algorithms.problem0016;
+package ru.druzhininyy.leetcode.exercises.algorithms.problem0017;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -12,24 +12,24 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.io.IOException;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@DisplayName("Test: 16. 3Sum Closest.")
+@DisplayName("Test: 17. Letter Combinations of a Phone Number.")
 public class SolutionTest {
 
     @Getter
     @Setter
     @ToString
     public static class TestCase {
-        public int[] nums;
-        public int target;
-        public int expected;
+        public String digits;
+        public List<String> expected;
     }
 
-    private static final String SOURCE_FILE = "problem0016.json";
+    private static final String SOURCE_FILE = "problem0017.json";
     public static List<TestCase> testCases;
 
     @BeforeAll
@@ -54,10 +54,12 @@ public class SolutionTest {
     @MethodSource("provideTestsArguments")
     public void runTestCases(TestCase testCase) {
         System.out.println(testCase);
-        var actual = Solution.threeSumClosest(testCase.getNums(), testCase.getTarget());
+        testCase.getExpected().sort(Comparator.naturalOrder());
+        var actual = Solution.letterCombinations(testCase.digits);
         assertEquals(testCase.expected, actual);
     }
 
 }
+
 
 

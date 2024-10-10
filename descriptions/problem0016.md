@@ -1,4 +1,4 @@
-## 0016. 3Sum Closest
+## 16. 3Sum Closest
 
 Given an integer array `nums` of length `n` and an integer `target`, find three integers in nums such that the sum is closest to target.
 
@@ -23,9 +23,9 @@ You may assume that each input would have exactly one solution.
 
 ### **[Solution](../src/main/java/ru/druzhininyy/leetcode/exercises/algorithms/problem0016/Solution.java)**
 
-**Complexity:**
+**Complexity:** `n` - `nums` length
 
-* Time complexity: `O(?)`.
-* Additional memory complexity: `O(?)`.
-* Input memory complexity: `O(?)`.
-* Output memory complexity: `O(?)`.
+* Time complexity: `O(n^2)`.
+* Additional memory complexity: `O(1)`.
+* Input memory complexity: `O(n)`.
+* Output memory complexity: `O(1)`.
