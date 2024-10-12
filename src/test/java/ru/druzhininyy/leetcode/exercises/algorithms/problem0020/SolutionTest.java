@@ -1,4 +1,4 @@
-package ru.druzhininyy.leetcode.exercises.algorithms.problem0019;
+package ru.druzhininyy.leetcode.exercises.algorithms.problem0020;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -15,52 +15,22 @@ import java.io.IOException;
 import java.util.*;
 import java.util.stream.Stream;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-@DisplayName("Test: 19. Remove Nth Node From End of List.")
+@DisplayName("Test: 20. Valid Parentheses.")
 public class SolutionTest {
 
     @Getter
     @Setter
     @ToString
     public static class TestCase {
-        public int[] list;
-        public int n;
-        public int[] expected;
-
-        public ListNode toList() {
-            if (list.length == 0) {
-                return null;
-            }
-
-            ListNode head = new ListNode(list[0]);
-            ListNode currentNode = head;
-
-            for (int i = 1; i < list.length; ++i) {
-                currentNode.next = new ListNode(list[i]);
-                currentNode = currentNode.next;
-            }
-
-            return head;
-        }
-
-        public static int[] toArray(ListNode head) {
-            if (head == null) {
-                return new int[0];
-            }
-
-            List<Integer> preResult = new ArrayList<>();
-            do {
-                preResult.add(head.val);
-                head = head.next;
-            } while (head != null);
-
-            return preResult.stream().mapToInt(num -> num).toArray();
-
-        }
+        public String str;
+        public Boolean[] expected;
     }
 
-    private static final String SOURCE_FILE = "problem0019.json";
+    private static final String SOURCE_FILE = "problem0020.json";
     public static List<TestCase> testCases;
 
     @BeforeAll
@@ -86,12 +56,13 @@ public class SolutionTest {
     public void runTestCases(TestCase testCase) {
         System.out.println(testCase);
 
-        var actual = TestCase.toArray(Solution.removeNthFromEnd(testCase.toList(), testCase.getN()));
+        var actual = Solution.isValid(testCase.getStr());
 
-        assertArrayEquals(testCase.expected, actual);
+        assertThat(actual, is(in(testCase.getExpected())));
     }
 
 }
+
 
 
 

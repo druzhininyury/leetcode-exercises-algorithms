@@ -20,11 +20,11 @@ Given the `head` of a linked list, remove the `n`-th node from the end of the li
 * `0 <= Node.val <= 100`
 * `1 <= n <= sz`
 
-### **[Solution](../src/main/java/ru/druzhininyy/leetcode/exercises/algorithms/problem0019/Solution.java)**
+### **[Solution](../src/main/java/ru/druzhininyy/leetcode/exercises/algorithms/problem0020/Solution.java)**
 
-**Complexity:**
+**Complexity:** `n` - size of the list
 
-* Time complexity: `O(?)`.
-* Additional memory complexity: `O(?)`.
-* Input memory complexity: `O(?)`.
-* Output memory complexity: `O(?)`.
+* Time complexity: `O(n)`.
+* Additional memory complexity: `O(1)`.
+* Input memory complexity: `O(n)`.
+* Output memory complexity: `O(1)`.

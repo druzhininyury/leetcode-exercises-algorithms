@@ -17,4 +17,5 @@
 14. [x] [16. 3Sum Closest](descriptions/problem0016.md)
 15. [x] [17. Letter Combinations of a Phone Number](descriptions/problem0017.md)
 16. [x] [18. 4Sum](descriptions/problem0018.md)
-17. [ ] [19. Remove Nth Node From End of List](descriptions/problem0019.md)
+17. [x] [19. Remove Nth Node From End of List](descriptions/problem0019.md)
+18. [x] [20. Valid Parentheses](descriptions/problem0020.md)
