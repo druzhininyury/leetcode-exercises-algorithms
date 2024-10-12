@@ -17,7 +17,6 @@ import java.util.stream.Stream;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("Test: 20. Valid Parentheses.")
 public class SolutionTest {

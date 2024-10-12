@@ -28,7 +28,7 @@ An input string is valid if:
 * `1 <= str.length <= 10^4`
 * `str` consists of parentheses only `'()[]{}'`.
 
-### **[Solution](../src/main/java/ru/druzhininyy/leetcode/exercises/algorithms/problem0000/Solution.java)**
+### **[Solution](../src/main/java/ru/druzhininyy/leetcode/exercises/algorithms/problem0020/Solution.java)**
 
 **Complexity:**
 

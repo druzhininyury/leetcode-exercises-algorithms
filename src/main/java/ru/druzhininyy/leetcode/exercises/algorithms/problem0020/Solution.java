@@ -9,7 +9,7 @@ public class Solution {
 
     public static class BracketsSet {
 
-        private static Map<Integer, Integer> closingToOpening = new HashMap<>();
+        private static final Map<Integer, Integer> closingToOpening = new HashMap<>();
         static {
             closingToOpening.put((int) ')', (int) '(');
             closingToOpening.put((int) ']', (int) '[');
