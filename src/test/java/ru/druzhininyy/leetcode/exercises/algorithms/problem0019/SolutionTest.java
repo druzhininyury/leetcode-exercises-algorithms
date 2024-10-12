@@ -1,4 +1,4 @@
-package ru.druzhininyy.leetcode.exercises.algorithms.problem0018;
+package ru.druzhininyy.leetcode.exercises.algorithms.problem0019;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -12,47 +12,55 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@DisplayName("Test: 18. 4Sum.")
+@DisplayName("Test: 19. Remove Nth Node From End of List.")
 public class SolutionTest {
 
     @Getter
     @Setter
     @ToString
     public static class TestCase {
-        public int[] nums;
-        public int target;
-        public List<List<Integer>> expected;
+        public int[] list;
+        public int n;
+        public int[] expected;
+
+        public ListNode toList() {
+            if (list.length == 0) {
+                return null;
+            }
+
+            ListNode head = new ListNode(list[0]);
+            ListNode currentNode = head;
+
+            for (int i = 1; i < list.length; ++i) {
+                currentNode.next = new ListNode(list[i]);
+                currentNode = currentNode.next;
+            }
+
+            return head;
+        }
+
+        public static int[] toArray(ListNode head) {
+            if (head == null) {
+                return new int[0];
+            }
+
+            List<Integer> preResult = new ArrayList<>();
+            do {
+                preResult.add(head.val);
+                head = head.next;
+            } while (head != null);
+
+            return preResult.stream().mapToInt(num -> num).toArray();
+
+        }
     }
 
-    public static final Comparator<List<Integer>> lexigraphicComparator = (leftOperand, rightOperand) -> {
-        Iterator<Integer> leftIterator = leftOperand.iterator();
-        Iterator<Integer> rightIterator = rightOperand.iterator();
-
-        while (leftIterator.hasNext() && rightIterator.hasNext()) {
-            int diff = leftIterator.next() - rightIterator.next();
-            if (diff != 0) {
-                return diff;
-            }
-        }
-
-        if (leftIterator.hasNext()) {
-            return -1;
-        }
-        if (rightIterator.hasNext()) {
-            return 1;
-        }
-        return 0;
-    };
-
-    private static final String SOURCE_FILE = "problem0018.json";
+    private static final String SOURCE_FILE = "problem0019.json";
     public static List<TestCase> testCases;
 
     @BeforeAll
@@ -77,17 +85,14 @@ public class SolutionTest {
     @MethodSource("provideTestsArguments")
     public void runTestCases(TestCase testCase) {
         System.out.println(testCase);
-        testCase.getExpected().forEach(list -> list.sort(Comparator.naturalOrder()));
-        testCase.getExpected().sort(lexigraphicComparator);
 
-        var actual = Solution.fourSum(testCase.getNums(), testCase.getTarget());
-        actual.stream().map(ArrayList::new).forEach(list -> list.sort(Comparator.naturalOrder()));
-        actual.sort(lexigraphicComparator);
+        var actual = TestCase.toArray(Solution.removeNthFromEnd(testCase.toList(), testCase.getN()));
 
-        assertEquals(testCase.expected, actual);
+        assertTrue(Arrays.equals(testCase.expected, actual));
     }
 
 }
+
 
 
 
