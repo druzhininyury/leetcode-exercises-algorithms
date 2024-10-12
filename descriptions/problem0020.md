@@ -30,9 +30,9 @@ An input string is valid if:
 
 ### **[Solution](../src/main/java/ru/druzhininyy/leetcode/exercises/algorithms/problem0020/Solution.java)**
 
-**Complexity:**
+**Complexity:** `n` - `str` length
 
-* Time complexity: `O(?)`.
-* Additional memory complexity: `O(?)`.
-* Input memory complexity: `O(?)`.
-* Output memory complexity: `O(?)`.
+* Time complexity: `O(n)`.
+* Additional memory complexity: `O(n)`.
+* Input memory complexity: `O(n)`.
+* Output memory complexity: `O(1)`.
