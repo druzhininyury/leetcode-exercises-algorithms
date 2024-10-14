@@ -1,0 +1,17 @@
+[
+  {
+    "word1": "abc",
+    "word2": "pqr",
+    "expected": ["apbqcr"]
+  },
+  {
+    "word1": "ab",
+    "word2": "pqrs",
+    "expected": ["apbqrs"]
+  },
+  {
+    "word1": "abcd",
+    "word2": "pq",
+    "expected": ["apbqcd"]
+  }
+]

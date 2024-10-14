@@ -23,4 +23,5 @@
 - [x] 0020.&nbsp;[Valid Parentheses](descriptions/problem0020.md)
 - [x] 0021.&nbsp;[Merge Two Sorted Lists](descriptions/problem0021.md)
 - [x] 0022.&nbsp;[Generate Parentheses](descriptions/problem0022.md)
+- [x] 1768.&nbsp;[Merge Strings Alternately](descriptions/problem1768.md)
 
