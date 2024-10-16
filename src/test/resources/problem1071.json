@@ -1,0 +1,17 @@
+[
+  {
+    "str1": "ABCABC",
+    "str2": "ABC",
+    "expected": ["ABC"]
+  },
+  {
+    "str1": "ABABAB",
+    "str2": "ABAB",
+    "expected": ["AB"]
+  },
+  {
+    "str1": "LEET",
+    "str2": "CODE",
+    "expected": [""]
+  }
+]
