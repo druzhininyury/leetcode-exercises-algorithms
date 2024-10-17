@@ -23,6 +23,7 @@
 - [x] 0020.&nbsp;[Valid Parentheses](descriptions/problem0020.md)
 - [x] 0021.&nbsp;[Merge Two Sorted Lists](descriptions/problem0021.md)
 - [x] 0022.&nbsp;[Generate Parentheses](descriptions/problem0022.md)
+- [x] 0345.&nbsp;[Reverse Vowels of a String](descriptions/problem0345.md)
 - [x] 0605.&nbsp;[Can Place Flowers](descriptions/problem0605.md)
 - [x] 1071.&nbsp;[Greatest Common Divisor of Strings](descriptions/problem1071.md)
 - [x] 1431.&nbsp;[Kids With the Greatest Number of Candies](descriptions/problem1431.md)

@@ -1,0 +1,14 @@
+[
+  {
+    "str": "IceCreAm",
+    "expected": ["AceCreIm"]
+  },
+  {
+    "str": "leetcode",
+    "expected": ["leotcede"]
+  },
+  {
+    "str": "bcd",
+    "expected": ["bcd"]
+  }
+]
