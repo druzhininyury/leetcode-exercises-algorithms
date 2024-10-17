@@ -1,0 +1,14 @@
+[
+  {
+    "str": "the sky is blue",
+    "expected": ["blue is sky the"]
+  },
+  {
+    "str": "  hello world  ",
+    "expected": ["world hello"]
+  },
+  {
+    "str": "a good   example",
+    "expected": ["example good a"]
+  }
+]
