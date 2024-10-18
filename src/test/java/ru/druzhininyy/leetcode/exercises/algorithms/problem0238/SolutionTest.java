@@ -1,4 +1,4 @@
-package ru.druzhininyy.leetcode.exercises.algorithms.problem0151;
+package ru.druzhininyy.leetcode.exercises.algorithms.problem0238;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -18,18 +18,18 @@ import java.util.stream.Stream;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-@DisplayName("Test: 151. Reverse Words in a String.")
+@DisplayName("Test: 238. Product of Array Except Self.")
 public class SolutionTest {
 
     @Getter
     @Setter
     @ToString
     public static class TestCase {
-        public String str;
-        public List<String> expected;
+        public int[] nums;
+        public List<int[]> expected;
     }
 
-    private static final String SOURCE_FILE = "problem0151.json";
+    private static final String SOURCE_FILE = "problem0238.json";
     public static List<TestCase> testCases;
 
     @BeforeAll
@@ -55,12 +55,13 @@ public class SolutionTest {
     public void runTestCases(TestCase testCase) {
         System.out.println(testCase);
 
-        var actual = Solution.reverseWords(testCase.getStr());
+        var actual = Solution.productExceptSelf(testCase.getNums());
 
         assertThat(actual, is(testCase.getExpected().get(0)));
     }
 
 }
+
 
 
 
