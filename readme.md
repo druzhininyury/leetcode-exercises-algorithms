@@ -25,6 +25,7 @@
 - [x] 0022.&nbsp;[Generate Parentheses](descriptions/problem0022.md)
 - [x] 0151.&nbsp;[Reverse Words in a String](descriptions/problem0151.md)
 - [x] 0238.&nbsp;[Product of Array Except Self](descriptions/problem0238.md)
+- [x] 0334.&nbsp;[Increasing Triplet Subsequence](descriptions/problem0334.md)
 - [x] 0345.&nbsp;[Reverse Vowels of a String](descriptions/problem0345.md)
 - [x] 0605.&nbsp;[Can Place Flowers](descriptions/problem0605.md)
 - [x] 1071.&nbsp;[Greatest Common Divisor of Strings](descriptions/problem1071.md)

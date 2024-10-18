@@ -1,0 +1,14 @@
+[
+  {
+    "nums": [1, 2, 3, 4, 5],
+    "expected": [true]
+  },
+  {
+    "nums": [5, 4, 3, 2, 1],
+    "expected": [false]
+  },
+  {
+    "nums": [2, 1, 5, 0, 4, 6],
+    "expected": [true]
+  }
+]
