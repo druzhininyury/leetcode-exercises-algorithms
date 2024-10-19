@@ -1,0 +1,22 @@
+[
+  {
+    "chars": ["a", "a", "b", "b", "c", "c", "c"],
+    "expectedReturnValue": 6,
+    "expectedCompressedString": ["a", "2", "b", "2", "c", "3"]
+  },
+  {
+    "chars": ["a"],
+    "expectedReturnValue": 1,
+    "expectedCompressedString": ["a"]
+  },
+  {
+    "chars": ["a", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b"],
+    "expectedReturnValue": 4,
+    "expectedCompressedString": ["a", "b", "1", "2"]
+  },
+  {
+    "chars": ["o", "o", "o", "o", "o", "o", "o", "o", "o", "o"],
+    "expectedReturnValue": 3,
+    "expectedCompressedString": ["o", "1", "0"]
+  }
+]
