@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Solution {
 
-    private static int MAX_ROUND_INTEGER = 1_000_000_000;
+    private static final int MAX_ROUND_INTEGER = 1_000_000_000;
 
     public static int compress(char[] chars) {
         int readIdx = 0;
@@ -40,13 +40,6 @@ public class Solution {
         }
 
         return writeIdx;
-    }
-
-    public static void main(String[] args) {
-        char[] chars = new char[] {'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o'};
-
-        System.out.println(compress(chars));
-        System.out.println(Arrays.toString(chars));
     }
 
 }

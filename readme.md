@@ -25,6 +25,7 @@
 - [x] 0022.&nbsp;[Generate Parentheses](descriptions/problem0022.md)
 - [x] 0151.&nbsp;[Reverse Words in a String](descriptions/problem0151.md)
 - [x] 0238.&nbsp;[Product of Array Except Self](descriptions/problem0238.md)
+- [x] 0283.&nbsp;[Move Zeroes](descriptions/problem0283.md)
 - [x] 0334.&nbsp;[Increasing Triplet Subsequence](descriptions/problem0334.md)
 - [x] 0345.&nbsp;[Reverse Vowels of a String](descriptions/problem0345.md)
 - [x] 0443.&nbsp;[String Compression](descriptions/problem0443.md)
