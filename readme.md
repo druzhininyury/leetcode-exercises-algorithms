@@ -33,5 +33,6 @@
 - [x] 0605.&nbsp;[Can Place Flowers](descriptions/problem0605.md)
 - [x] 1071.&nbsp;[Greatest Common Divisor of Strings](descriptions/problem1071.md)
 - [x] 1431.&nbsp;[Kids With the Greatest Number of Candies](descriptions/problem1431.md)
+- [x] 1679.&nbsp;[Max Number of K-Sum Pairs](descriptions/problem1679.md)
 - [x] 1768.&nbsp;[Merge Strings Alternately](descriptions/problem1768.md)
 
