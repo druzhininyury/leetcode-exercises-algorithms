@@ -1,0 +1,12 @@
+[
+  {
+    "sub": "abc",
+    "str": "ahbgdc",
+    "expected": [true]
+  },
+  {
+    "sub": "axc",
+    "str": "ahbgdc",
+    "expected": [false]
+  }
+]

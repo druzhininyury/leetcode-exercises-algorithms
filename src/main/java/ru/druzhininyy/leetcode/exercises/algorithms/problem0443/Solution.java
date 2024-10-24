@@ -1,7 +1,5 @@
 package ru.druzhininyy.leetcode.exercises.algorithms.problem0443;
 
-import java.util.Arrays;
-
 public class Solution {
 
     private static final int MAX_ROUND_INTEGER = 1_000_000_000;
